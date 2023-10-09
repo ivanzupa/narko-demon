@@ -1,0 +1,426 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Plus Jakarta Sans, sans-serif;
+	font-size: 100%;
+	background-color: #000;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#sve {
+	background-color: #fff;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 48px 48px 48px;
+}
+
+#header-flex {
+	display: flex;
+    flex-direction: row-reverse;
+}
+	 
+#logo img {
+	max-width: 240px;
+}
+
+.icon {
+	display: none;
+}
+
+/* NAVIGACIJSKA TRAKA */
+
+#alatna {
+	position: sticky;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	background-color: #fff;
+	opacity: 90%;
+	top: 0;
+	z-index: 9;
+}
+
+#alatnamob {
+	display: none;
+}
+
+#navi {
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	/* background-color: green; */
+}
+
+#navi li {
+	list-style: none;
+	/* background-color: red; */
+}
+
+#navi li a {
+	display: block;
+	color: #000;
+	padding: 0 8px;
+	text-decoration: none;
+	font-size: 14px;
+	border-radius: 12px 0 12px 0;
+	/* background-color: blue; */
+	}
+	
+#navi li a:hover {
+  background-color: #C3161A;
+  opacity: 80%;
+}
+	
+	/* HERO */
+	
+.hero section {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 8px solid #1E1E1E;
+	border-radius: 60px 0px 60px 0px;
+	margin: 8px 0px;
+	padding: 48px 48px;
+}
+
+h1 {
+	max-width: 400px;
+	font-size: 48px;
+}
+
+.vizual {
+	position: relative;
+}
+
+.vizualmob {
+	display: none;
+}
+
+.nasltekst section div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nasltekst section article {
+	width: 50%;
+	/* background-color: red; */
+    margin: 0px 48px 0 0;
+}
+
+	/* GLAVNI SADRŽAJ */
+
+.slika section {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 48px 48px;
+	background-color: #1E1E1E;
+	border-radius: 60px 0px 60px 0px;
+	margin: 0 0 48px 0;
+	max-height: 1080px;
+}
+
+.slika section .txt {
+	max-width: 400px;
+	min-width: 267px;
+	background-color: #fff ;
+	opacity: 80%;
+	padding: 24px 24px;
+	border-radius: 48px;
+}
+
+.slika section .txt h3 {
+	color: #C3161A;
+	font-size: 24px;
+}
+
+.slika section .txt .rb {
+	font-size: 12px;
+	text-align: right;
+}
+
+.slika section .vizual {
+	background-color: red;
+	max-width: 400px;
+	min-width: 314px;
+}
+
+.vizmob {
+	display: none;
+}
+
+.vizmobg {
+	display: none;
+}
+
+.lista li {
+	list-style: none;
+}
+
+.lista li a {
+	color: #000;
+	text-decoration: none;
+	line-height: 24px;
+	
+	/* display: block; */
+	padding: 0 12px;
+	border-radius: 12px 0 12px 0;
+}
+
+.lista li a:hover {
+  background-color: #C3161A;
+  opacity: 80%;
+}
+
+.tekst section div {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.tekst section article {
+	width: 50%;
+	/* background-color: red; */
+    margin: 0px 48px 48px 0;
+}
+
+.crna {
+	background-color: #1E1E1E;
+	color: #fff;
+	padding: 48px 48px;
+	margin: 24px 48px;
+	text-align: center;
+	border-radius: 60px;
+	letter-spacing: 6px;
+}
+
+footer {
+	background-color: #1E1E1E;
+	color: #fff;
+	padding: 48px 96px;
+}
+
+footer p {
+	max-width: 50%;
+	line-height: 36px;
+}
+
+.videobox {
+	width: 400px;
+	position: relative;
+	padding: 24px 0 20% 0;
+    /* padding-bottom: 20%; */
+    /* padding-top: 30px; */
+	overflow: hidden;
+}
+.videobox iframe,
+.videobox object,
+.videobox embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+		/* Mobile */
+
+@media screen and (max-width: 920px) {
+
+#sve {
+	max-width: 768px;
+	padding: 0 0 12px 0;
+	font-size: 12px;
+}
+
+header, .tekst {
+	margin: 0 24px 24px 24px;
+}
+
+/* NAVIGACIJSKA TRAKA */
+
+#alatna {
+	align-items: top; 
+}
+
+#alatna a {
+	color: #1E1E1E;
+}
+	
+#logo img {
+	max-width: 192px;
+	padding: 12px 24px;
+}
+
+.icon {
+	display: block;
+	margin-right: 24px;
+}
+
+#navi {
+	display: none;
+}
+
+#navi li {
+	list-style: none;
+}
+
+#navi li a {
+	padding-right: 0px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+#navi.open {
+	display: block;
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    opacity: 80%;
+    padding: 16px;
+    z-index: 10;
+    right: 40px;
+    top: 20px;
+    line-height: 26px;
+}
+	
+	/* HERO */
+	
+.hero section {
+	display: block;
+	border: 4px solid #1E1E1E;
+	border-radius: 48px 0px 48px 0px;
+	margin: auto;
+	padding: 24px 24px;
+}
+
+.hero section div {
+	text-align: center;
+}
+
+h1 {
+	max-width: 280px;
+	font-size: 30px;
+	margin: auto;
+}
+
+.vizual {
+	display: none;
+}
+
+.vizualmob {
+	display: block;
+
+}
+
+.nasltekst section div {
+	display: block;
+}
+
+.nasltekst section article {
+	width: 100%;
+    margin: 0 0;
+}
+
+	/* GLAVNI SADRŽAJ */
+	
+.viz {
+	display: none;
+}
+
+.slika section {
+	display: block;
+	padding: 24px 24px;
+	background-color: #1E1E1E;
+	border-radius: 60px 0px 60px 0px;
+	margin: 48px 0;
+	max-height: 720px;
+}
+
+.slika section .txt {
+	padding: 24px 24px;
+	border-radius: 48px;
+	margin: auto;
+}
+
+.slika section .txt h3 {
+	font-size: 18px;
+}
+
+.slika section .txt .rb {
+	font-size: 10px;
+}
+
+.slika section .vizual {
+	min-width: 314px;
+}
+
+.vizmob {
+	display: block;
+	text-align: center;
+	margin-bottom: -120px;
+}
+
+.vizmobg {
+	display: block;
+	text-align: center;
+	margin-bottom: -48px;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.lista li a {
+	color: #000;
+	text-decoration: none;
+	line-height: 24px;
+}
+
+.tekst section div {
+	display: block;
+}
+
+.tekst section article {
+	width: 100%;
+    margin: 0 0;
+}
+
+.crna {
+	padding: 24px 24px;
+	margin: 24px 24px;
+	border-radius: 48px;
+}
+
+footer {
+	background-color: #1E1E1E;
+	color: #fff;
+	padding: 24px 48px;
+	font-size: 12px;
+}
+
+footer p {
+	max-width: 50%;
+	line-height: 18px;
+}
+
+.videobox {
+	width: 314px;
+	height: 150px;
+	margin: auto;
+	margin-bottom: 24px;
+}
+.videobox iframe,
+.videobox object,
+.videobox embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}
